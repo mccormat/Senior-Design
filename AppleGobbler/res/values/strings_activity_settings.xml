@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Example General settings -->
+    <string name="pref_difficulty_list">Difficulty Level</string>
+    
+    <string-array name="pref_difficulty_list_titles">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>King Cobra</item>
+    </string-array>
+    <string-array name="pref_difficulty_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+
+</resources>

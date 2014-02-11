@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02D622"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MenuActivity" >
+    
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/new_game" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/high_score_button"
+        android:layout_marginLeft="268dp"
+        android:layout_toRightOf="@+id/new_game_button"
+        android:text="@string/settings" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/settings_button"
+        android:layout_marginRight="59dp"
+        android:ems="10"
+        android:hint="Initials" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/new_game_button"
+        android:layout_alignLeft="@+id/settings_button"
+        android:src="@drawable/gobbler_logo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="80dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:src="@drawable/apple_logo" />
+
+    <Button
+        android:id="@+id/high_score_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/new_game_button"
+        android:layout_alignBottom="@+id/new_game_button"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginRight="22dp"
+        android:text="@string/high_score" />
+
+</RelativeLayout>
